@@ -36,12 +36,12 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.surfaceAreaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.volumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sphereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuboidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cylinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cubeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.volumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sphereToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.coneToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cuboidToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -167,6 +167,36 @@
             this.surfaceAreaToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.surfaceAreaToolStripMenuItem.Text = "Surface area";
             // 
+            // sphereToolStripMenuItem
+            // 
+            this.sphereToolStripMenuItem.Name = "sphereToolStripMenuItem";
+            this.sphereToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.sphereToolStripMenuItem.Text = "Sphere";
+            // 
+            // coneToolStripMenuItem
+            // 
+            this.coneToolStripMenuItem.Name = "coneToolStripMenuItem";
+            this.coneToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.coneToolStripMenuItem.Text = "Cone";
+            // 
+            // cuboidToolStripMenuItem
+            // 
+            this.cuboidToolStripMenuItem.Name = "cuboidToolStripMenuItem";
+            this.cuboidToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.cuboidToolStripMenuItem.Text = "Cuboid";
+            // 
+            // cylinderToolStripMenuItem
+            // 
+            this.cylinderToolStripMenuItem.Name = "cylinderToolStripMenuItem";
+            this.cylinderToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.cylinderToolStripMenuItem.Text = "Cylinder";
+            // 
+            // cubeToolStripMenuItem
+            // 
+            this.cubeToolStripMenuItem.Name = "cubeToolStripMenuItem";
+            this.cubeToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.cubeToolStripMenuItem.Text = "Cube";
+            // 
             // volumeToolStripMenuItem
             // 
             this.volumeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -179,64 +209,34 @@
             this.volumeToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.volumeToolStripMenuItem.Text = "Volume";
             // 
-            // sphereToolStripMenuItem
-            // 
-            this.sphereToolStripMenuItem.Name = "sphereToolStripMenuItem";
-            this.sphereToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sphereToolStripMenuItem.Text = "Sphere";
-            // 
-            // coneToolStripMenuItem
-            // 
-            this.coneToolStripMenuItem.Name = "coneToolStripMenuItem";
-            this.coneToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.coneToolStripMenuItem.Text = "Cone";
-            // 
-            // cuboidToolStripMenuItem
-            // 
-            this.cuboidToolStripMenuItem.Name = "cuboidToolStripMenuItem";
-            this.cuboidToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cuboidToolStripMenuItem.Text = "Cuboid";
-            // 
-            // cylinderToolStripMenuItem
-            // 
-            this.cylinderToolStripMenuItem.Name = "cylinderToolStripMenuItem";
-            this.cylinderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cylinderToolStripMenuItem.Text = "Cylinder";
-            // 
-            // cubeToolStripMenuItem
-            // 
-            this.cubeToolStripMenuItem.Name = "cubeToolStripMenuItem";
-            this.cubeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cubeToolStripMenuItem.Text = "Cube";
-            // 
             // sphereToolStripMenuItem1
             // 
             this.sphereToolStripMenuItem1.Name = "sphereToolStripMenuItem1";
-            this.sphereToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sphereToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.sphereToolStripMenuItem1.Text = "Sphere";
             // 
             // coneToolStripMenuItem1
             // 
             this.coneToolStripMenuItem1.Name = "coneToolStripMenuItem1";
-            this.coneToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.coneToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.coneToolStripMenuItem1.Text = "Cone";
             // 
             // cuboidToolStripMenuItem1
             // 
             this.cuboidToolStripMenuItem1.Name = "cuboidToolStripMenuItem1";
-            this.cuboidToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cuboidToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.cuboidToolStripMenuItem1.Text = "Cuboid";
             // 
             // cylinderToolStripMenuItem1
             // 
             this.cylinderToolStripMenuItem1.Name = "cylinderToolStripMenuItem1";
-            this.cylinderToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cylinderToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.cylinderToolStripMenuItem1.Text = "Cylinder";
             // 
             // cubeToolStripMenuItem1
             // 
             this.cubeToolStripMenuItem1.Name = "cubeToolStripMenuItem1";
-            this.cubeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cubeToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.cubeToolStripMenuItem1.Text = "Cube";
             // 
             // label1
@@ -391,6 +391,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "Surface area";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -400,6 +401,7 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "Surface area";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -436,6 +438,7 @@
             this.button6.TabIndex = 29;
             this.button6.Text = "Volume";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 

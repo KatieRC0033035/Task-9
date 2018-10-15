@@ -21,5 +21,29 @@ namespace Task_9
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double ssa = Convert.ToDouble(textBox1.Text);
+
+            double a = 4 * Math.PI * ssa * ssa;
+
+            label10.Text = "" + a;
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            double sv = Convert.ToDouble(textBox1.Text);
+
+            double a = (4.0 / 3.0) * Math.PI * sv * sv * sv;
+
+            label15.Text = "" + a;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
